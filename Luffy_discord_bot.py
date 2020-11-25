@@ -1,5 +1,12 @@
 import discord 
 import random
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+TOKEN = os.getenv('DISCORD_TOKEN')
+
 
 from discord.ext import commands
 
@@ -69,6 +76,6 @@ async def clear(ctx,amount=1):
 
 
 #put your token here
-client.run("NzgxMTA5ODU1OTkyODA3NDI0.X743PQ.CBz9xj9hTnp_RF8ZOsH-gOrMwgE")
+client.run(TOKEN)
 
 #by Harsh Tanwar.
