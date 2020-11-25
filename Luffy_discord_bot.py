@@ -69,6 +69,6 @@ async def clear(ctx,amount=1):
 
 
 #put your token here
-client.run("Insert your token")
+client.run("Insert your Token here")
 
 #by Harsh Tanwar.
