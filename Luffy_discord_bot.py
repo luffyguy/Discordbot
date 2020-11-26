@@ -71,6 +71,7 @@ async def diff(ctx,number1,number2):
 
 #to clear chat
 @client.command()
+@commands.has_permissions(manage_messages=True)
 async def clear(ctx,amount=1):#algorithm channel id          #project channel id
     if ctx.channel.id != 778499893249310730 and ctx.channel.id !=778225956971347988: 
         await ctx.channel.purge(limit=amount+1)   
